@@ -13,16 +13,7 @@ The questions that we wanted to explore through our dashboards were:
 - **5.	Dashboard “Terrorism Density”: What are the most dangerous countries if we look at terrorist attacks per 1 million citizens?** 
 - a.	We were able to see that countries such as El Salvador have the highest rate of terrorist attacks per citizens. This dashboard allows users to select a specific country and find out the most dangerous cities based on that metric
 
-Other remarks:
-- 1.	Data cleaning (DataViz_DC.ipynb)
-- This notebook displays the code used to clean the dataset. Most important issues: only selected fields with less than 2% of null values (confirming this information with TableauPrep). Rows with null values in Days were filled by the mean. Categorical variables with -9 or -99 were replaced with “Unknown”. A new column was created, “Casualties”, to add Wounded and Killed.
-- 2.	External data (Adding_data.ipynb)
-- This notebook was used to add external data, such as GDP, population and the Freedom House Index of each country, by year. We added an identifier, “Country_year”, as key to add the external data. 
-- 3.	Tableau
--- a.	Unknown countries and cities
----i.	We changed the name of unknown, currently nonexistent countries, to those that are currently located were these countries were.
----ii.	There were around 30k cities that still remained unknown, so we decided to use instead the Latitude and Longitude given by the dataset, which mostly corrected the issue, leaving only around 2k null values.
--- b.	Several calculated fields were created to help us achieve the desired results, such as:
----i.	Casualties by attack, % of count(eventid), Terrorism density, Years Active, and other LOD expressions.
-
-
+## Authors and Acknowledgment
+- Janeiro, António
+- Mendes, Tomás
+- Mora Labarca, Isabel
